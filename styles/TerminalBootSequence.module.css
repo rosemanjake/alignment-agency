@@ -1,0 +1,28 @@
+.line {
+  margin-bottom: 0.25em;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+}
+
+.finalLine {
+  margin-top: 2em;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+}
+
+.container {
+  background-color: #000;
+  color: var(--main);
+  font-family: monospace;
+  padding: 20px;
+  height: 100dvh;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/* Fallback for browsers that don't support dvh */
+@supports not (height: 100dvh) {
+  .container {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,48 @@
+.statusPage {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.statusPage h2 {
+  color: var(--main);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.statusPage h3 {
+  color: var(--main);
+  margin-bottom: 10px;
+}
+
+.chartContainer {
+  margin-bottom: 30px;
+}
+
+/* Override recharts styles to fit our theme */
+.statusPage :global(.recharts-cartesian-grid-horizontal line),
+.statusPage :global(.recharts-cartesian-grid-vertical line) {
+  stroke: #004400;
+}
+
+.statusPage :global(.recharts-tooltip-label) {
+  color: var(--main);
+}
+
+.statusPage :global(.recharts-default-tooltip) {
+  background-color: rgba(0, 17, 0, 0.8) !important;
+  border: var(--border) !important;
+  border-radius: 0 !important;
+}
+
+.statusPage :global(.recharts-tooltip-item) {
+  color: var(--main) !important;
+}
+
+.statusPage :global(.recharts-legend-item-text) {
+  color: var(--main) !important;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+}

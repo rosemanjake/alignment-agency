@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --main: #ffbf00;
+  --darkMain: #cc9900;
+  --veryDarkMain: #996600;
+
+  --border: 3px solid var(--main);
+}
+
+.customButton.active {
+  background-color: var(--main);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  font-size: 1.15em;
+  background-color: #000000;
+  color: var(--main);
+  height: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 1.25em;
+  }
+}
+
+body * {
+  border-radius: 3px;
+}
+
+hr {
+  background-color: var(--main);
+  height: 3px;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--border);
+}
+
+th,
+td {
+  border: var(--border);
+  padding: 8px;
+}
+
+tr:first-child th {
+  border-top: 0;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.33) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  background-size:
+    100% 2px,
+    3px 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-left: var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border: 3px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkMain);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main) #000000;
+}
+
+/**
+@keyframes pulsate {
+  from {
+    text-shadow: 0 0 2px var(--main), 0 0 4px var(--main);
+  }
+  to {
+    text-shadow: 0 0 3px var(--main), 0 0 6px var(--main);
+  }
+}
+
+
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+*/

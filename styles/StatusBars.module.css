@@ -1,0 +1,63 @@
+.statusBars {
+  display: flex;
+  gap: 20px;
+}
+
+.statusBar {
+  width: 33%;
+}
+
+.statusBar .title {
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.statusBar .bar {
+  display: flex;
+  height: 20px;
+  background-color: #001100;
+  border: var(--border);
+}
+
+.block {
+  flex: 1;
+  margin: 1px;
+}
+
+.statusBar .block.filled {
+  background-color: var(--main);
+  box-shadow:
+    0 0 5px var(--main),
+    0 0 10px var(--main);
+}
+
+.elevated .bar {
+  box-shadow: 0 0 8px var(--main);
+}
+
+.critical .title {
+  color: var(--main);
+  text-shadow: 0 0 8px var(--main);
+}
+
+.critical .bar {
+  box-shadow: 0 0 12px var(--main);
+  animation: criticalPulse 0.9s infinite alternate;
+}
+
+.critical .block.filled {
+  background-color: var(--main);
+  box-shadow:
+    0 0 8px var(--main),
+    0 0 16px var(--main);
+}
+
+@keyframes criticalPulse {
+  from {
+    opacity: 0.78;
+  }
+  to {
+    opacity: 1;
+  }
+}

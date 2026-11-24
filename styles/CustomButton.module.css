@@ -1,0 +1,46 @@
+.customButton,
+.sendButton {
+  background-color: #000000;
+  color: var(--main);
+  border: var(--border);
+  padding: 10px 20px;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: var(--main);
+  box-shadow: 0 0 20px var(--main);
+  color: black;
+}
+
+.customButton.active {
+  background-color: var(--darkMain);
+  box-shadow: 0 0 10px var(--main);
+  color: black;
+}
+
+.customButton.active img,
+.customButton:hover img {
+  filter: brightness(0);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.disabled {
+  background-color: var(--veryDarkMain);
+  color: black;
+  cursor: not-allowed;
+}
+
+.sendButton {
+  width: 175px;
+}
+
+.margin {
+  margin: 20px;
+  width: auto;
+}

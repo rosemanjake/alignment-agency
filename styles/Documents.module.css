@@ -1,0 +1,47 @@
+.documentList {
+  overflow-y: auto;
+}
+
+.documentList h2 {
+  margin-bottom: 20px;
+}
+
+.documentList ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.documentList li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: var(--darkMain);
+  transition: background-color 0.3s ease;
+}
+
+.documentList li:hover {
+  background-color: var(--veryDarkMain);
+}
+
+.documentView {
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.backButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: var(--darkMain);
+  color: var(--main);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--veryDarkMain);
+}

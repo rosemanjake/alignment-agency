@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.chatHistory {
+  flex: 1;
+  overflow-y: auto;
+  border: var(--border);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--main);
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.user {
+  /* Add specific styles for user messages if needed */
+}
+
+.ai {
+  /* Add specific styles for AI messages if needed */
+}
+
+.error {
+  border-color: #ff0000;
+}
+
+.role {
+  font-weight: bold;
+}
+
+/* Scrollbar styles */
+.chatHistory::-webkit-scrollbar {
+  width: 12px;
+}
+
+.chatHistory::-webkit-scrollbar-track {
+  background: #000000;
+  border-left: 1px solid var(--main);
+}
+
+.chatHistory::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border: 3px solid #000000;
+}
+
+.chatHistory::-webkit-scrollbar-thumb:hover {
+  background: var(--darkMain);
+}
+
+/* For Firefox */
+.chatHistory {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main) #000000;
+}
+
+.secondaryButtonContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+}
